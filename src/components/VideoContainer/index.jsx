@@ -4,11 +4,18 @@ import styled from 'styled-components';
 const Container = styled.div`
   color: white;
   padding: 50px;
+  display: flex;
+  justify-content: center;
 `;
 
 const Video = styled.video`
-  width: 100%;
-  height: 60%;
+      width: 320px;
+      height: 240px;
+
+  @media (min-width: 650px) {
+    width: 100%;
+    height: 60%;
+  }
 
 `;
 
